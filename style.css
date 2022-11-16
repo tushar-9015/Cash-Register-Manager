@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
+
+* {
+    margin: 0px;
+    padding: px;
+}
+
+:root {
+    --primary-color: #f3ba34;
+    --secondary-color: #143d59;
+
+}
+
+body {
+    background-color: #f6e9cd;
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    text-align: center;
+    margin: 2rem;
+
+}
+
+
+h1 {
+    font-size: 3rem;
+    color: var(--secondary-color)
+}
+
+
+
+.description {
+    margin: 0.5rem;
+    text-align: center;
+    font-size: x-large;
+    color: black;
+}
+
+.input-div {
+    margin: 2rem 5rem 1rem 5rem;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+input {
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    border-color: var(--secondary-color);
+    margin: 0.5rem auto;
+    font-style: bold;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: rgb(255, 255, 255);
+    padding: 0.5rem 2rem;
+    margin: auto;
+    display: block;
+    border-radius: 1rem;
+    border-width: 3px;
+    font-size: large;
+}
+
+.message {
+    display: none;
+}
+
+
+table {
+    width: 70vw;
+    margin: 2rem auto;
+    border-width: 5px;
+
+}
+
+table,
+th,
+td {
+    border: 1px solid white;
+    border-width: 4px;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    text-align: left;
+    color: black;
+    padding: 2rem 1rem;
+}
+
+
+footer {
+    margin-top: 2rem;
+    padding: 2rem;
+    text-align: center;
+}
+
+.connect {
+    color: var(--secondary-color);
+    font-size: 1.50rem;
+    margin-bottom: 1.25rem;
+
+}
+
+a,
+i {
+    padding: 1rem 0.5rem;
+    
+}
