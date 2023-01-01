@@ -11,8 +11,8 @@ function getMessage(text) {
     message.innerText = text;
 };
 
-function checkBill(billValue) {
-    if (billValue => 0) {
+function validateBill(billValue) {
+    if (billValue >= 0) {
         return true
     } else {
         getMessage("The Bill Amount can not be negative or empty.")
@@ -45,7 +45,7 @@ function refreshTable() {
 }
 function pickCashNote (billValue, cashReceived) {
     var moneyGive = cashReceived - billValue;
-    // console.log("moneyGive", moneyGive)
+  
     var currency = [2000, 500, 200, 100, 50, 20, 10, 1];
     for (var i=0; i < numNote.length; i++) {
         if (moneyGive < currency[i]) {
@@ -62,7 +62,7 @@ function pickCashNote (billValue, cashReceived) {
 }
 
 function buttonCashHandler() {
-    if (checkBill(Number(billAmount.value))) {
+    if (validateBill(Number(billAmount.value))) {
         checkCashReceived(Number(billAmount.value), Number(cashReceived.value));
     }
 }

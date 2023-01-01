@@ -3,6 +3,7 @@
 * {
     margin: 0px;
     padding: px;
+    
 }
 
 :root {
@@ -17,8 +18,9 @@ body {
 }
 
 header {
-    text-align: center;
     margin: 2rem;
+    display: flex;
+    justify-content: center;
 
 }
 
@@ -64,6 +66,11 @@ button {
 
 .message {
     display: none;
+    margin: 0.5rem;
+    padding: 0.5rem 2rem;
+    text-align: center;
+    font-size: x-large;
+    color: black;
 }
 
 
